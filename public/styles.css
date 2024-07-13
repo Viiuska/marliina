@@ -1,0 +1,292 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #333;
+  margin-top: auto;
+  padding: 2px 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #d46184;
+  text-align: center;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d46184;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #925976;
+}
+
+nav img {
+  max-width: 100px;
+  margin: 0 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 10px 0;
+  text-align: center;
+  padding: 0 10px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+section {
+  padding: 40px 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+#info,
+#palvelut,
+#galleria,
+footer {
+  background-color: #f1e8ef;
+}
+
+#info p,
+#palvelut p,
+#varaaAika p {
+  text-align: justify;
+  margin: 0 0 20px;
+}
+
+#info a {
+  color: #d46184;
+}
+
+.info-div {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.info-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.info-img img {
+  max-width: 300px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.info-text {
+  max-width: 500px;
+}
+
+.info-text a {
+  color: #d46184;
+  text-decoration: none;
+}
+
+.info-text a:hover {
+  text-decoration: underline;
+  color: #925976;
+}
+
+.info-text em {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.info-text img {
+  max-width: 100px;
+  display: inline-block;
+  vertical-align: text-top;
+}
+#varaaAika {
+  text-align: center;
+  background-color: #ffffff;
+}
+#varaaAika a {
+  display: inline-block;
+  margin: 5px 0;
+  padding: 10px 20px;
+  background-color: #d46184;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#varaaAika a:hover {
+  color: #925976;
+}
+
+.galleria-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 0 10px;
+}
+
+.galleria-img .img {
+  flex: 1 1 calc(33.33% - 30px);
+  max-width: calc(33.33% - 30px);
+  margin: 15px;
+}
+
+.galleria-img img,
+.galleria-img video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.content-info2 {
+  max-width: 400px;
+  text-align: left;
+}
+
+.content-info2 h1 {
+  font-family: "Alex Brush", cursive;
+  font-size: 3em;
+  margin: 0;
+}
+
+.content-info2 p,
+.content-info2 a {
+  font-size: 1em;
+  color: #333;
+  margin: 5px 0;
+}
+
+.content-info2 a {
+  color: #d46184;
+  text-decoration: none;
+}
+
+.content-info2 a:hover {
+  text-decoration: underline;
+  color: #925976;
+}
+
+#yhteistiedot {
+  background-color: #ffffff;
+}
+
+.google-map iframe {
+  border: 0;
+  width: 100%;
+  max-width: 600px;
+  height: 340px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .info-content {
+    flex-direction: column;
+  }
+
+  .galleria-img .img {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .google-map iframe {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    padding: 0;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  .galleria-img .img {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
