@@ -220,6 +220,10 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#yhteistiedot {
+  background-color: #ffffff;
+}
+
 .content-container {
   display: flex;
   justify-content: center;
@@ -230,7 +234,7 @@ footer {
 
 .content-info2 {
   max-width: 400px;
-  text-align: left;
+  text-align: center;
 }
 
 .content-info2 h1 {
@@ -239,25 +243,25 @@ footer {
   margin: 0;
 }
 
-.content-info2 p,
-.content-info2 a {
+.content-info2 p {
   font-size: 1em;
   color: #333;
   margin: 5px 0;
 }
 
-.content-info2 a {
-  color: #d46184;
+.fa {
+  padding: 20px;
+  font-size: 1.5em;
+  width: 30px;
+  text-align: center;
   text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  color: #d46184;
 }
 
-.content-info2 a:hover {
-  text-decoration: underline;
-  color: #925976;
-}
-
-#yhteistiedot {
-  background-color: #ffffff;
+.fa:hover {
+  opacity: 0.7;
 }
 
 .google-map iframe {
