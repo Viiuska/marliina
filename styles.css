@@ -40,20 +40,22 @@ footer {
   padding: 2px 0;
 }
 
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
-
 nav {
-  background-color: #ffffff;
-  border-bottom: 1px solid #d46184;
-  text-align: center;
-  padding: 10px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #d46184;
+  padding: 10px 0;
+}
+
+nav img {
+  max-height: 90px;
+  margin: 0 20px;
 }
 
 nav ul {
@@ -61,7 +63,6 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -81,11 +82,6 @@ nav a {
 nav a:hover {
   text-decoration: underline;
   color: #925976;
-}
-
-nav img {
-  max-width: 100px;
-  margin: 0 20px;
 }
 
 h1,
@@ -181,10 +177,24 @@ footer {
   display: inline-block;
   vertical-align: text-top;
 }
+
+#palvelut em {
+  font-weight: bold;
+}
+
+#palvelut .palvelu-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
 #varaaAika {
   text-align: center;
   background-color: #ffffff;
 }
+
 #varaaAika a {
   display: inline-block;
   margin: 5px 0;
@@ -198,6 +208,12 @@ footer {
 
 #varaaAika a:hover {
   color: #925976;
+}
+
+#varaaAika img {
+  max-width: 250px;
+  height: auto;
+  padding-top: 10px;
 }
 
 .galleria-img {
@@ -228,6 +244,16 @@ footer {
   max-width: 150px;
   width: 100%;
   margin: 0 20px;
+}
+
+#yhteistiedot a {
+  color: #d46184;
+  text-decoration: none;
+}
+
+#yhteistiedot a:hover {
+  text-decoration: underline;
+  color: #925976;
 }
 
 .content-container {
@@ -279,6 +305,12 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+@media (min-width: 769px) {
+  nav li:last-child {
+    margin-right: 100px;
+  }
+}
+
 @media (max-width: 768px) {
   nav {
     display: flex;
@@ -300,7 +332,7 @@ footer {
   }
 
   nav img {
-    max-width: 100px;
+    max-width: 200px;
     height: 80px;
     position: relative;
     transition: top 0.3s ease;
@@ -348,7 +380,7 @@ footer {
   }
 
   .galleria-img .img {
-    flex: 1 1 calc(50% - 10px); /* Adjusted to show 2 images per row with a gap */
-    max-width: calc(50% - 10px); /* Adjusted max-width */
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(50% - 10px);
   }
 }
