@@ -236,22 +236,22 @@ footer {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#yhteistiedot {
+#yhteystiedot {
   background-color: #ffffff;
 }
 
-#yhteistiedot img {
+#yhteystiedot img {
   max-width: 150px;
   width: 100%;
   margin: 0 20px;
 }
 
-#yhteistiedot a {
+#yhteystiedot a {
   color: #d46184;
   text-decoration: none;
 }
 
-#yhteistiedot a:hover {
+#yhteystiedot a:hover {
   text-decoration: underline;
   color: #925976;
 }
